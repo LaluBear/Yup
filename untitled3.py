@@ -15,5 +15,5 @@ spiral.sort()
 spiral = spiral[::-1]
 spiral = spiral[:3]
 for a,b in spiral:
-    a = str(a//60)+":"+str(a%60)
+    a = str(a//60)+":"+("0"*(2-len(str(a%60))))+str(a%60)
     print(f"{b} --> {a}")
